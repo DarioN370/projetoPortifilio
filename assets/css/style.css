@@ -2,3 +2,41 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+}
+
+header{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /*usa para centralizar igual o site do matrix, ele cria um espaço fora*/
+    margin: 0 auto; /*usa para centralizar igual o site do matrix, ele cria um espaço fora*/
+    align-items: center; /*faz com que os filhos fiquem centralizados na vertical*/
+}
+
+#menu{
+    display: flex;
+    flex-wrap: nowrap; /*evita que meus itens do menu quebrem para baixo*/
+    gap: 10px;
+    list-style-type: none;
+}
+
+.logo{
+    width: 100px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    /* transition: color 0.4s ease; */
+}
+
+#menu a:hover{
+    color: rgba(0, 0, 0, 0.596);
+}
+
