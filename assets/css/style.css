@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     margin: 0;
+    background: url(../imgs/bgfundo.gif);
 }
 
 header{
-    margin-top: 5px;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     max-width: 1200px; /*usa para centralizar igual o site do matrix, ele cria um espaço fora*/
     margin: 0 auto; /*usa para centralizar igual o site do matrix, ele cria um espaço fora*/
-    align-items: center; /*faz com que os filhos fiquem centralizados na vertical*/
+    align-items: center; /*faz com que os filhos fiquem centralizados na vertical*/ 
 }
 
 #menu{
@@ -29,14 +34,43 @@ header{
 
 #menu a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 8px 10px;
     font-size: 1.7rem;
-    font-weight: 600;
-    /* transition: color 0.4s ease; */
+    font-weight: 300;
+    transition: color 0.6s ease; 
 }
 
 #menu a:hover{
-    color: rgba(0, 0, 0, 0.596);
+    color: rgb(155, 150, 150);
 }
 
+#perfil{
+    display: flex;
+    max-width: 1200px;
+    height: 80vh;
+    margin: 0 auto;
+    color: #c5c5c5;
+    gap: 200px;
+    align-items: center;
+}
+
+#perfil__dados{
+    gap: 100px;
+}
+
+#perfil__dados h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 30px 0;
+    line-height: 1.2;
+}
+
+#perfil__dados h2{
+    font-weight: 300;
+}
+
+#perfil__dados p{
+    color: #c5c5c5;
+    font-weight: 300;
+}
