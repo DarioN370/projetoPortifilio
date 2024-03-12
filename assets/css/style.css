@@ -9,11 +9,12 @@
 
 body{
     margin: 0;
-    background: url(../imgs/bgfundo.gif);
+    /* background: url(../imgs/bgfundo.gif); */
+    background: #ffffff;
 }
 
 header{
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     max-width: 1200px; /*usa para centralizar igual o site do matrix, ele cria um espaço fora*/
@@ -25,8 +26,9 @@ header{
     display: flex;
     flex-wrap: nowrap; /*evita que meus itens do menu quebrem para baixo*/
     gap: 10px;
-    list-style-type: none;
+    list-style: none;
 }
+
 
 .logo{
     width: 100px;
@@ -34,43 +36,80 @@ header{
 
 #menu a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 8px 10px;
     font-size: 1.7rem;
     font-weight: 300;
-    transition: color 0.6s ease; 
+    transition: color 0.4s ease; 
 }
 
 #menu a:hover{
-    color: rgb(155, 150, 150);
+    color: rgb(184, 184, 184);
 }
 
 #perfil{
     display: flex;
     max-width: 1200px;
-    height: 80vh;
+    height: 90vh;
     margin: 0 auto;
-    color: #c5c5c5;
+    color: #000000;
     gap: 200px;
     align-items: center;
 }
 
-#perfil__dados{
-    gap: 100px;
-}
+
 
 #perfil__dados h1{
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 4.7rem;
+    font-weight: 700;
     padding: 30px 0;
-    line-height: 1.2;
+    line-height: 1.2; 
 }
 
 #perfil__dados h2{
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #perfil__dados p{
-    color: #c5c5c5;
-    font-weight: 300;
+    font-weight: 500;
 }
+
+/* seção projetos - inicio */
+#projetos{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 200px;
+}
+
+#projetos h2{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 5ch;
+    color: #202d73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* seção projetos - final */
